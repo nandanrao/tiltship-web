@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "autoprefixer": {},
+    "postcss-css-variables": {},
+    "postcss-custom-media": {},
+    "postcss-nested": {}
+  }
+}

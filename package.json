@@ -1,0 +1,29 @@
+{
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "cssnano": "^4.1.10",
+    "parcel": "^2.0.0-beta.1",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-nested": "^5.0.3",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "browserslist": [
+    ">= 0.1%"
+  ],
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  }
+}

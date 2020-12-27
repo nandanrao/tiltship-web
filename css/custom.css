@@ -1,0 +1,128 @@
+@import './normalize.css';
+@import './main.css';
+
+@custom-media --viewport-large (width >= 800px);
+
+:root {
+  --color-end-accent: rgba(80,180,120,0.8);
+  --color-dark: #222;
+}
+
+
+html {
+  color: var(--color-dark);
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+
+  @media (--viewport-large) {
+    font-size: 2em;
+  }
+}
+
+
+body {
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5%;
+
+  @media(--viewport-large) {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2 {
+  margin: 2em 0;
+}
+
+.title {
+  margin-top: 1em;
+}
+
+.title h3 {
+  margin: 3em 0 0 0;
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: lowercase;
+
+  @media (--viewport-large) {
+    width: 100%;
+  }
+}
+
+.signup {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+
+.signup input {
+  margin: 2em auto;
+  font-size: .8em;
+  border: 5px solid var(--color-dark);
+  padding: .5em;
+}
+
+.signup button {
+  border: none;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 5px solid var(--color-dark);
+  border-bottom: 5px solid var(--color-dark);
+  background-color: var(--color-end-accent);
+  padding: 10px;
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.signup *:focus {
+  box-shadow: 0 0 2px 7px rgba(250,168,255,.7);
+}
+
+.intro {
+  background: url("../img/ian1.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.content {
+  position: relative;
+  padding: 3em 0;
+  z-index: -2;
+}
+
+.content p {
+  margin: 2em 0;
+}
+
+.bg {
+  background: linear-gradient(0deg, rgba(255,252,211,.5) 0%, rgba(250,168,255,0.1) 20%, rgba(132,159,209,0) 100%);
+  padding: 0 0 5em 0;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+form input, form button{
+  display: block;
+  margin: 1em auto;
+}
