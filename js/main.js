@@ -23,18 +23,15 @@ function draw(ctx, startX, startY, len, angle, angleShift, startingWidth, idx=0)
   ctx.restore();
 }
 
-function drawTree(el) {
+function drawTree(c) {
+  c.width = c.clientWidth
+  c.height = c.clientHeight
 
-  const c = document.createElement('canvas')
-  c.width = el.clientWidth
-  c.height = el.clientHeight
-  el.appendChild(c)
+  const l = Math.round(c.clientHeight / 4)
+  const as = Math.ceil(c.clientWidth**.6 / 7)
+  const sw = Math.ceil(c.clientWidth**.6 / 2)
 
-  const l = Math.round(el.clientHeight / 4)
-  const as = Math.ceil(el.clientWidth**.6 / 7)
-  const sw = Math.ceil(el.clientWidth**.6 / 2)
-
-  draw(c.getContext('2d'), Math.round(el.clientWidth/2), el.clientHeight, l, 0, as, sw)
+  draw(c.getContext('2d'), Math.round(c.clientWidth/2), c.clientHeight, l, 0, as, sw)
 }
 
 
@@ -53,11 +50,7 @@ async function onSubmit(e) {
   document.getElementById('loading-form').classList.toggle('hidden')
   document.getElementById('empty-form').classList.toggle('hidden')
 
-
-
   const email = e.target[0].value;
-
-  console.log(email)
 
   // get fcid and google ad id info;
 
@@ -121,9 +114,7 @@ function main() {
   // TODO:
   // change element
   // redraw on width change, debounce
-  const body = document.querySelector('.content')
-  drawTree(body)
-
+  drawTree(document.querySelector('#tree'))
 
   const form = document.getElementById('email-form');
   form.addEventListener('submit', onSubmit);
