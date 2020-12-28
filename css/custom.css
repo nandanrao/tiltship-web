@@ -99,11 +99,15 @@ h2 {
 }
 
 .intro {
-  background: url("../img/ian1.jpg") center/cover no-repeat;
+  background: url("../img/ian1-small.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media (--viewport-large) {
+    background: url("../img/ian1.jpg") center/cover no-repeat;
+  }
 }
 
 
