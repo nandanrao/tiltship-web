@@ -14,8 +14,8 @@ html {
   font-size: 1.5em;
   line-height: 1.4;
   font-family: 'Mukta', sans-serif;
+  font-display: swap;
   font-weight: 400;
-
   @media (--viewport-large) {
     font-size: 2em;
   }
@@ -38,6 +38,7 @@ body {
 h1, h2 {
   margin: 0;
   font-family: 'Kanit', sans-serif;
+  font-display: swap;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -53,6 +54,7 @@ h2 {
 .title h3 {
   margin: 3em 0 0 0;
   font-family: 'IBM Plex Mono', monospace;
+  font-display: swap;
   text-transform: lowercase;
 
   @media (--viewport-large) {
