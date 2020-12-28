@@ -1,3 +1,4 @@
+import "regenerator-runtime/runtime.js";
 import { getAdIds } from './ads'
 
 function draw(ctx, startX, startY, len, angle, angleShift, startingWidth, idx=0) {

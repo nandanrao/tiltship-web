@@ -27,6 +27,7 @@
     "@typeform/embed": "^0.31.1",
     "js-cookie": "^2.2.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7"
   }
 }
