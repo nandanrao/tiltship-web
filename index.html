@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TILTSHIFT</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,6 +21,16 @@
   <link rel="stylesheet" href="css/custom.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SB3EP4KHJ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SB3EP4KHJ4');
+  </script>
+
 </head>
 
 <body>
@@ -106,18 +116,6 @@
   </div>
 
 
-  <!-- Add your site or application content here -->
-  <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script> -->
-  <!-- <script src="js/plugins.js"></script> -->
-  <script src="js/index.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
-
-  </script>
-
   <!-- Facebook pixel -->
   <script>
     // !function(f,b,e,v,n,t,s)
@@ -135,7 +133,8 @@
     <img height="1" width="1" style="display:none"
          src="https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1"/>
   </noscript>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
