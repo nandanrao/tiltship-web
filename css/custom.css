@@ -1,7 +1,7 @@
 @import './normalize.css';
 @import './main.css';
 
-@custom-media --viewport-large (width >= 800px);
+@custom-media --viewport-large (min-width: 800px);
 
 :root {
   --color-end-accent: rgba(80,180,120,0.8);
