@@ -82,13 +82,25 @@
 
       </div>
     </div>
-  <div class="container signup">
+
+
+    <div class="container signup">
       <h2> Join us </h2>
-      <p> Sign up to get notified when we launch:</p>
-      <form id="email-form" action="">
-        <input placeholder="Email" name="email" type="text" value=""/>
-        <button>Submit</button>
-      </form>
+      <div class="form-area">
+        <div id="empty-form">
+          <p> Sign up to get notified when we launch:</p>
+          <form id="email-form" action="">
+            <input placeholder="Email" name="email" type="text" value=""/>
+            <button>Submit</button>
+          </form>
+        </div>
+        <div id="loading-form" class="hidden">
+          <img src="img/loading.svg">
+        </div>
+        <div id="finished-form" class="hidden">
+          <p> Thank you. We will be in touch soon. </p>
+        </div>
+      </div>
   </div>
 
   </div>
@@ -97,7 +109,7 @@
   <!-- Add your site or application content here -->
   <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script> -->
   <!-- <script src="js/plugins.js"></script> -->
-
+  <script src="js/index.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -124,8 +136,6 @@
          src="https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1"/>
   </noscript>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-  <script src="js/index.js"></script>
 </body>
 
 </html>

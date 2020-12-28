@@ -61,9 +61,15 @@ h2 {
 }
 
 .signup {
-  margin-top: 3em;
-  margin-bottom: 5em;
   text-align: center;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
 }
 
 
@@ -85,6 +91,7 @@ h2 {
   font-family: 'Kanit', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .signup *:focus {
@@ -125,4 +132,8 @@ canvas {
 form input, form button{
   display: block;
   margin: 1em auto;
+}
+
+#loading-form {
+
 }

@@ -37,7 +37,10 @@ function drawTree(el) {
 }
 
 
-function onSubmit(e) {
+async function onSubmit(e) {
+  e.preventDefault();
+
+  // add spinner
   // segment send form subscription
 
   // fbq('track', 'Subscription');
@@ -45,6 +48,9 @@ function onSubmit(e) {
 
   // get gclid
   // get gclientId
+
+  document.getElementById('loading-form').classList.toggle('hidden')
+  document.getElementById('empty-form').classList.toggle('hidden')
 
 
 
@@ -66,7 +72,39 @@ function onSubmit(e) {
   // process.env.SERVER_URL
   // to send data to backend
 
-  e.preventDefault();
+  // lazy load typeform library only after submitting data
+
+  const {makePopup} = await import('@typeform/embed')
+  const formUrl = 'https://form.typeform.com/to/bEzLeP8A'
+
+  const idData = await getAdIds()
+
+  // make qs from idData
+  const qs = ''
+
+  const typeform = makePopup(`${formUrl}?${qs}`, {
+    mode: 'drawer_right',
+    onSubmit: (event) => {
+
+      // send to server to avoid needing hidden fields?
+      // track event? "filled survey"?
+      // send response id?
+      // segement?
+
+      console.log(event)
+      typeform.close()
+    }
+  })
+
+  typeform.open()
+
+  setTimeout(() => {
+    document.getElementById('loading-form').classList.toggle('hidden')
+    document.getElementById('finished-form').classList.toggle('hidden')
+  }, 500)
+
+
+
 }
 
 

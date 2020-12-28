@@ -1,3 +1,5 @@
 import main from './main.js'
 
-main()
+window.addEventListener('DOMContentLoaded', (event) => {
+   main()
+});
