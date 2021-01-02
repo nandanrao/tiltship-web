@@ -53,47 +53,64 @@
     <div class="content">
       <div class="container">
 
-        <p>The value of fossil fuel companies is derived from the amount of fuel they can sell. </p>
+        <section>
 
-        <p>Citizens in democracies around the world want to burn less fossil fuels. </p>
+          <h2></h2>
+        <div class="explain">
+          <p>The value of fossil fuel companies is derived from the amount of fuel they can sell. </p>
 
-        <p>If citizens win, the fossil fuel companies lose. </p>
+          <p>Citizens in democracies around the world want to burn less fossil fuels. </p>
 
-        <h2> It's a question of when </h2>
+          <p>If citizens win, the fossil fuel companies lose. </p>
+        </div>
 
-        <p>Everybody knows we will drastically reduce our fossil fuel consumption sooner or later. </p>
+        </section>
 
-        <p>For fossil fuel companies, the later the better. For the rest of us, the sooner the better. </p>
+        <section>
+          <h2> It's a question of when </h2>
 
-        <p>The votes are on our side, but lobbying money isn't. </p>
+          <div class="explain">
+            <p>Everybody knows we will drastically reduce our fossil fuel consumption sooner or later. </p>
 
-        <p> So we change that. </p>
+            <p>For fossil fuel companies, the later the better. For the rest of us, the sooner the better. </p>
 
-        <h2> We use the system </h2>
+            <p>The votes are on our side, but lobbying money isn't. </p>
 
-        <p>The plan is simple: </p>
+            <p> So we change that. </p>
+          </div>
 
-        <p>1. We create an investment fund that takes an aggressive short position against fossil fuel companies.</p>
+        </section>
 
-        <p>2. We put money into lobbying governments to enact legislation that helps the climate and hurts the fossil fuel companies.</p>
+        <section>
+          <h2> We use the system </h2>
 
-        <p>3. When the pro-climate legislation is enacted and the value of fossil fuel companies tanks, the value of our short position goes up and we win back the money from lobbying.</p>
+          <div class="explain">
+            <p>The plan is simple: </p>
 
-        <p>4. We win. The fossil fuel companies lose. No compromises.</p>
+            <p>1. We create an investment fund that takes an aggressive short position against fossil fuel companies.</p>
 
+            <p>2. We put money into lobbying governments to enact legislation that helps the climate and hurts the fossil fuel companies.</p>
 
+            <p>3. When the pro-climate legislation is enacted and the value of fossil fuel companies tanks, the value of our short position goes up and we win back the money from lobbying.</p>
 
-        <h2>Concentrating dispersed interests</h2>
+            <p>4. We win. The fossil fuel companies lose. No compromises.</p>
 
-        <p> Fossil fuel companies have won thus far because they are a small, concentrated group of people with a lot to lose. </p>
+          </div>
+        </section>
 
-        <p> We, the rest of the people, are many. What we have to lose is less tangible: part of each of our souls and the heritage of humanity.</p>
+        <section>
+          <h2>Concentrating dispersed interests</h2>
 
-        <p>Tiltship is a plan to gather our disperesed interests together and distill them into a vehicle that makes change. </p>
+          <div class="explain">
+            <p> Fossil fuel companies have won thus far because they are a small, concentrated group of people with a lot to lose. </p>
 
-        <p>A vehicle made of money.</p>
+            <p> We, the rest of the people, are many. What we have to lose is less tangible: part of each of our souls and the heritage of humanity.</p>
 
+            <p>Tiltship is a plan to gather our disperesed interests together and distill them into a vehicle that makes change. </p>
 
+            <p>A vehicle made of money.</p>
+          </div>
+        </section>
 
       </div>
 
@@ -101,26 +118,20 @@
     </div>
 
 
-    <div class="container signup">
-      <h2> Join us </h2>
-      <div class="form-area">
-        <div id="empty-form">
-          <p> Sign up to get notified when we launch:</p>
-          <form id="email-form" action="">
-            <input placeholder="Email" name="email" type="text" value=""/>
-            <button>Submit</button>
-          </form>
-        </div>
-        <div id="loading-form" class="hidden">
-          <img src="img/loading.svg">
-        </div>
-        <div id="finished-form" class="hidden">
-          <p> Thank you. We will be in touch soon. </p>
-        </div>
-      </div>
-  </div>
+    <div id="app" class="container signup"></div>
+
+
 
   </div>
+    <footer>
+      <ul>
+        <li>Tiltship LLC</li>
+        <li><a href="mailto:info@tiltship.com">info@tiltship.com</a></li>
+        <li> <a href="/data">Data privacy policy</a></li>
+        <li><a href="mailto:data@tiltship.com">Data access or deletion requests</a></li>
+</ul>
+    </footer>
+
 
 
   <!-- Facebook pixel -->
@@ -133,6 +144,7 @@
     //  t.src=v;s=b.getElementsByTagName(e)[0];
     //  s.parentNode.insertBefore(t,s)}(window, document,'script',
     //                                  'https://connect.facebook.net/en_US/fbevents.js1');
+    // fbq('consent', 'revoke');
     // fbq('init', '{your-pixel-id-goes-here}');
     // fbq('track', 'PageView');
   </script>
@@ -142,6 +154,7 @@
   </noscript>
 
   <script src="js/index.js"></script>
+  <script src="js/sv-consent.js"></script>
 </body>
 
 </html>

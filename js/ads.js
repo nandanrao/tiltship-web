@@ -23,14 +23,15 @@ function getGclid() {
 
 function getGclientId() {
   return new Promise((resolve, reject) => {
-    ga((tracker) => {
-      try {
-        var clientId = tracker.get('clientId');
-        resolve(clientId);
-      } catch (e) {
-        reject(e);
-      }
-    });
+    resolve('')
+    // ga((tracker) => {
+    //   try {
+    //     var clientId = tracker.get('clientId');
+    //     resolve(clientId);
+    //   } catch (e) {
+    //     reject(e);
+    //   }
+    // });
   })
 }
 
